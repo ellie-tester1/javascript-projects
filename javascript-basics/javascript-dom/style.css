@@ -1,0 +1,60 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#root{ 
+    display: flex; 
+    justify-content: center; 
+    flex-wrap: wrap; 
+    width: 90%; 
+    margin: 30px auto; 
+    gap: 30px; 
+} 
+.item{ 
+    width: 250px; 
+    height: 250px; 
+    background-color: gold; 
+    font-size: 50px; 
+} 
+.red{ 
+    background-color: red; 
+} 
+.message{ 
+    width: 100%; 
+    height: 100vh; 
+    position: absolute; 
+    z-index: 2; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    animation: 1s ease-in-out message; 
+} 
+@keyframes message { 
+    0%{ 
+        transform: translateX(110%); 
+    } 
+    100%{ 
+        transform: translateX(0); 
+    } 
+} 
+.message h1{ 
+    padding: 50px; 
+    border-radius: 20px; 
+    box-shadow: 0px 0px 500px #000; 
+ 
+} 
+.message button{ 
+    font-size: 50px; 
+    border: none; 
+    background-color: transparent; 
+    padding: 20px; 
+    order: 1; 
+    align-self: flex-start; 
+} 
+.message-active{ 
+    display: none; 
+}
+
+    
